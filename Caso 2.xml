@@ -1,0 +1,8 @@
+<InfoCreditCard>
+	<systemOrigen>Sistyem SA</systemOrigen>
+	<location>System Direccion</location>
+	<cardNumber>1234567890123456</cardNumber>
+	<clientId>123456789</clientId>
+	<limit>2000</limit>
+	<expirationDate>2026-12-01</expirationDate>
+</InfoCreditCard>

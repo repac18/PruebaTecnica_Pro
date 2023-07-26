@@ -1,0 +1,108 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card-header">
+
+    <div class="card-body">
+
+        <form id="formCreate">
+
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="dato">Crear datos</label>
+                    <div class="input-group">
+                        
+                        <input name="dato" class="form-control" id="dato" />
+                        <button type="submit" class="btn btn-success">
+                            Crear
+                        </button>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4">
+                    <span id="crearFila"></span>
+                </div>
+               
+            </div>
+        </form>
+
+
+        <form id="formUpdate">
+
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="dato">dato</label>
+                    <input name="dato" class="form-control" id="dato" />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="datoNuevo">Actualizar dato</label>
+                    <div class="input-group">
+                        <input name="datoNuevo" class="form-control" id="datoNuevo" />
+                        <button type="submit" class="btn btn-warning">
+                            Actualizar
+                        </button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-md-4">
+                    <span id="updateFila"></span>
+                </div>
+                
+            </div>
+        </form>
+
+        <form id="formDelete">
+
+            @Html.AntiForgeryToken()
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="dato">Eliminar dato</label>
+                    <div class="input-group">
+                        <input name="dato" class="form-control" id="dato" />
+                        <button type="submit" class="btn btn-danger">
+                            Eliminar
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <span id="DeleteFila"></span>
+                </div>
+                
+            </div>
+        </form>
+
+        <form id="formSelect">
+            <div class="row">
+                <div class="col-md-8">
+                    <label for="dato">dato</label>
+                    <div class="input-group">
+                        <input name="dato" class="form-control" id="dato" />
+                        <button type="submit" class="btn btn-primary">
+                            Seleccionar
+                        </button>
+                    </div>
+                    
+                    
+                </div>
+                <div class="col-md-4">
+                    <span id="selectFila"></span>
+                </div>
+                
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section scripts{
+        <script>
+                var instance = new Datos();
+
+        </script>
+}

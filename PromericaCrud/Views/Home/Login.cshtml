@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+
+
+<div class="card-header">
+
+    <div class="card-body">
+
+        <form id="formInicio">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <label>USUARIO</label>
+                    <input  name="usuario" required id="usuario" class="form-control"" />
+                </div>
+                <div class="col-md-12">
+                    <label>Password</label>
+                    <input  name="password" required id="password" type="password" class="form-control"" />
+                </div>
+                <button type="submit" class="btn btn-primary">
+                    INICIO DE SESION
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script>
+        var instance = new Login();
+
+    </script>
+}
